@@ -1,0 +1,17 @@
+{
+    // autofix linting errors on save in vscode https://stackoverflow.com/a/52259752
+    "eslint.enable": true,
+    "editor.formatOnSave": false,
+    "javascript.format.enable": false,
+    "eslint.options": {
+        "extensions": [ "*.html", "*.js", "*.vue", "*.jsx" ]
+    },
+    "eslint.validate": [
+        "javascript", "javascriptreact", "vue", "vue-html"
+    ],
+    "eslint.run": "onType",
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
