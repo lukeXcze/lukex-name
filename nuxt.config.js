@@ -1,3 +1,5 @@
+import bvSett from './bootstrap-cfg/bootstrap-vue_sett'
+
 export default {
     // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
     ssr: false,
@@ -21,6 +23,8 @@ export default {
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
+        '~/bootstrap-cfg/bootstrapStyle.scss',
+        'font-awesome/css/font-awesome.css'
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -38,10 +42,7 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
-    // https://go.nuxtjs.dev/bootstrap
-        'bootstrap-vue/nuxt',
-        // https://go.nuxtjs.dev/axios
-        '@nuxtjs/axios'
+        'bootstrap-vue/nuxt' // https://go.nuxtjs.dev/bootstrap
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -50,7 +51,18 @@ export default {
         baseURL: '/'
     },
 
+    bootstrapVue: {
+        bootstrapCSS: false,
+        bootstrapVueCSS: false,
+        icons: false,
+        config: bvSett
+    },
+
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
+        loaders: {
+            // sass: require('sass'),
+            // scss: require('sass')
+        }
     }
 }
