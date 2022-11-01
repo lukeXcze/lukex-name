@@ -1,10 +1,11 @@
 <template>
-    <div>
-        <b-navbar
-            type="dark"
-            variant="info"
-        >
-            <b-navbar-brand href="#">
+    <b-navbar
+        type="dark"
+        variant="info"
+        sticky
+    >
+        <b-container>
+            <b-navbar-brand href="/">
                 Chuchma Lukáš
             </b-navbar-brand>
 
@@ -24,8 +25,9 @@
                     </b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
-        </b-navbar>
-    </div>
+            <b-container />
+        </b-container>
+    </b-navbar>
 </template>
 
 <script>

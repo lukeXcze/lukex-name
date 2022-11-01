@@ -1,6 +1,8 @@
 <template>
     <div>
         <tplNavbar />
-        <nuxt />
+        <b-container>
+            <nuxt />
+        </b-container>
     </div>
 </template>
