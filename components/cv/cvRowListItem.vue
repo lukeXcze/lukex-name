@@ -6,7 +6,6 @@
             :label="label"
         />
         <span v-else>{{ label }}</span>
-        <small v-if="info">{{ info }}</small>
         <template v-if="tech && tech.length">
             <b-badge
                 v-for="t in tech"
@@ -17,9 +16,15 @@
                 {{ t }}
             </b-badge>
         </template>
-        <template v-if="reference && reference.length">
-            <br>{{ reference }}
-        </template>
+        <div
+            v-if="info"
+            class="small"
+        >
+            {{ info }}
+        </div>
+        <div v-if="reference && reference.length">
+            {{ reference }}
+        </div>
     </div>
 </template>
 
