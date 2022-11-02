@@ -61,7 +61,7 @@ module.exports = {
             title: 'Osobní schopnosti a dovednosti',
             rows: [
                 {
-                    label: 'IT programování',
+                    label: 'IT technologie',
                     list: techList
                 }, {
                     label: 'správa IT',

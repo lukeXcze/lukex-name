@@ -12,6 +12,7 @@ module.exports = [
         tech: ['Vue.js', 'Bootstrap-vue', 'Webpack', 'classic ASP', 'MSSQL'],
         info: 'Rozšíření původního systému o Vue.js aplikace vkládané zavedením webpackem zkompilovaných JS a CSS, načítání jednotlivých aplikací zavaděčem na základě jména aplikace. Backend vždy formou classic ASP resp. Jsciptu (MS implementace javascriptu specifikace ECMA3)',
         link: 'https://intranet.fce.vutbr.cz/',
+        linkLock: true,
         imgsCount: 1
     }, {
         key: 'dc',
@@ -19,12 +20,13 @@ module.exports = [
         tech: ['SketchUp', 'classic ASP', 'jQuery', 'MSSQL', 'Bootstrap'],
         info: 'Aplikace pro správu zakázek fakulty, základem jsou na serveru validované formy (jQuery.ajax), s následným schvalovacím procesem a exportem do celounivezitního finančního API.',
         link: 'https://intranet.fce.vutbr.cz/',
+        linkLock: true,
         imgsCount: 2
     }, {
         key: 'ts',
-        label: 'Webová mikroaplikace',
+        label: 'mikroaplikace Time-Spent EVB',
         tech: ['NuxtJS', 'Vuetify'],
-        info: 'Aplikace pracující výhradně s localStorage browseru pro studijní účely.',
+        info: 'Aplikace pracující výhradně s localStorage browseru pro oientační sběr dat pro studijní účely.',
         link: 'https://evb.fce.vutbr.cz/time-spent/',
         imgsCount: 1
     }, {
@@ -35,23 +37,31 @@ module.exports = [
         link: 'https://www.fce.vutbr.cz/o-fakulte/plany-budov/',
         imgsCount: 2
     }, {
+        key: 'sl',
+        label: 'stavební slovník',
+        tech: ['jQuery', 'classic ASP', 'MSSQL'],
+        info: 'Stavební slovník pro zlepšení odborné kvality zejména prací studentů. Aplikace byla dostupná v intranetu při zadávání anglických abstraktů a klíčových slov, přístupná je i veřejně.',
+        link: 'https://www.fce.vutbr.cz/pro-studenty/slovnik',
+        imgsCount: 1
+    }, {
         key: 'wi',
-        label: 'tvorba aplikací intranetu FAST VUT',
+        label: 'aplikace intranetu FAST VUT',
         tech: ['classic ASP', 'MSSQL', 'IIS'],
-        info: 'Původní systém z konce 90. let byl rozšiřován o nové aplikace, zprvu tradičnimi technologiemi.'
+        info: 'Původní systém z konce 90. let byl rozšiřován o nové aplikace, zprvu tradičnimi technologiemi.',
+        link: 'https://intranet.fce.vutbr.cz/',
+        linkLock: true,
+        imgsCount: 2
     }, {
         key: 'wm',
-        label: 'správa Moodle Fakulty stavební VUT v Brně',
-        tech: ['IIS'],
+        label: 'Moodle Fakulty stavební VUT v Brně',
+        info: 'údržba Moodle a tvorba Intranetové aplikace pro prási s Moodle API, import studentů a export hodnocení.',
+        tech: ['IIS', 'classic ASP'],
         link: 'https://lms.fce.vutbr.cz/'
     }, {
-        key: 'gl',
-        label: 'správa lokální instalace Gitlab',
-        link: 'https://gitlab.fce.vutbr.cz/'
-    }, {
         key: 'wp',
-        label: 'správa Wordpres pro weby ústavů, součástí, pravidelných akcí; vývoj interních pluginů',
+        label: 'sity Wordpres',
         tech: ['PHP', 'MariaDB', 'IIS', 'Let\'s Encrypt'],
-        info: 'Sity součástí běží na Wordpress v režimu multisite se sdíleným prostředím, '
+        info: 'Správa Wordpess instalací pro weby ústavů, součástí, pravidelných akcí; vývoj interních pluginů pro jednotné prostředí (cookie lišta), načínání dat Intranetu, ...',
+        linkItems: ['https://www.zel.fce.vutbr.cz/zamestnanci/', 'https://admas.eu/']
     }
 ]

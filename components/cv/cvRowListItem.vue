@@ -16,12 +16,6 @@
                 {{ t }}
             </b-badge>
         </template>
-        <div
-            v-if="info"
-            class="small"
-        >
-            {{ info }}
-        </div>
         <div v-if="reference && reference.length">
             {{ reference }}
         </div>
