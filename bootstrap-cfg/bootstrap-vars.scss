@@ -2,38 +2,6 @@
 
 // přepis proměnných
 $border-radius:                         0 !default;
-$spacer:                                0.5rem !default;
-$card-spacer-y:                         $spacer !default;
-$card-spacer-x:                         $spacer !default;
-$paragraph-margin-bottom:               .5rem !default;
-$font-size-base:                        .8rem !default; // Assumes the browser default, typically `16px`
-$headings-font-weight:                  700 !default;
-$table-cell-padding:                    .5rem !default;
-$table-cell-padding-sm:                 .25rem !default;
-$input-btn-padding-y:                   .2rem !default;
-$input-btn-padding-x:                   .5rem !default;
-$input-btn-padding-y-sm:                .15rem !default;
-$input-btn-padding-x-sm:                .3rem !default;
-$input-btn-padding-y-lg:                .3rem !default;
-$input-btn-padding-x-lg:                .75rem !default;
-$btn-block-spacing-y:                   .2rem !default;
-$label-margin-bottom:                   .2rem !default;
-$form-text-margin-top:                  .2rem !default;
-$form-check-input-gutter:               1rem !default;
-$form-check-input-margin-y:             .2rem !default;
-$form-check-input-margin-x:             .2rem !default;
-$form-check-inline-margin-x:            .5rem !default;
-$form-check-inline-input-margin-x:      .2rem !default;
-$form-group-margin-bottom:              .5rem !default;
 $custom-switch-indicator-border-radius: 0 !default;
-$pagination-padding-y:                  $input-btn-padding-y !default;
-$pagination-padding-x:                  $input-btn-padding-x !default;
-$pagination-padding-y-sm:               $input-btn-padding-y-sm !default;
-$pagination-padding-x-sm:               $input-btn-padding-x-sm !default;
-$pagination-padding-y-lg:               $input-btn-padding-y-lg !default;
-$pagination-padding-x-lg:               $input-btn-padding-x-lg !default;
-$alert-padding-y:                      .3rem !default;
-$alert-padding-x:                      .7rem !default;
-$alert-margin-bottom:                  .7rem !default;
 
 @import "bootstrap/scss/_variables.scss";
