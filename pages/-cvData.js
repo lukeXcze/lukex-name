@@ -79,7 +79,7 @@ module.exports = {
                     list: softList
                 },
                 { label: 'Mateřský jazyk', value: 'čeština' },
-                { label: 'Ostatní jazyky', value: 'angličtina' },
+                { label: 'Ostatní jazyky', value: 'angličtina (psaná forma: dobře , mluvené slovo: základy)' },
                 { label: 'Řidičský průkaz', value: 'skupina B' }
             ]
         }, {
