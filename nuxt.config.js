@@ -23,8 +23,7 @@ export default {
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
-        '~/bootstrap-cfg/bootstrapStyle.scss',
-        'font-awesome/css/font-awesome.css'
+        '~/bootstrap-cfg/bootstrapStyle.scss'
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -54,8 +53,8 @@ export default {
     bootstrapVue: {
         bootstrapCSS: false,
         bootstrapVueCSS: false,
-        icons: false,
-        config: bvSett
+        config: bvSett,
+        icons: true
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build

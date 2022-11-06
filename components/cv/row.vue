@@ -1,5 +1,5 @@
 <template>
-    <b-row>
+    <b-row :class="[printClass, 'print-pgin']">
         <b-col sm="4">
             {{ label }}
         </b-col>
@@ -8,6 +8,7 @@
                 v-if="link"
                 :link="link"
                 :label="value"
+                :lock="linkLock"
             />
             <nuxt-link
                 v-else-if="refKey"
@@ -42,6 +43,10 @@ export default {
             type: String,
             default: null
         },
+        linkLock: {
+            type: Boolean,
+            default: false
+        },
         refKey: {
             type: String,
             default: null
@@ -49,6 +54,19 @@ export default {
         list: {
             type: Array,
             default: null
+        },
+        print: {
+            type: String,
+            default: null
+        }
+    },
+    computed: {
+        printClass () {
+            switch (this.print) {
+                case 'only': return 'd-none d-print-flex'
+                case 'none': return 'd-print-none'
+            }
+            return null
         }
     }
 }

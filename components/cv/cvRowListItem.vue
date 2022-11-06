@@ -4,20 +4,20 @@
             v-if="link"
             :link="link"
             :label="label"
+            :lock="linkLock"
         />
         <span v-else>{{ label }}</span>
-        <template v-if="tech && tech.length">
-            <b-badge
-                v-for="t in tech"
-                :key="t"
-                variant="info"
-                class="ml-2"
-            >
-                {{ t }}
-            </b-badge>
-        </template>
-        <div v-if="reference && reference.length">
-            {{ reference }}
+
+        <cvTechItems
+            v-if="tech && tech.length"
+            class="small"
+            :list="tech"
+        />
+        <div
+            v-if="info"
+            class="small"
+        >
+            {{ info }}
         </div>
     </div>
 </template>
@@ -32,6 +32,10 @@ export default {
         link: {
             type: String,
             default: null
+        },
+        linkLock: {
+            type: Boolean,
+            default: false
         },
         info: {
             type: String,

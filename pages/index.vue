@@ -4,6 +4,7 @@
         <div
             v-for="s in sekce"
             :key="s.title"
+            class="print-nbi"
         >
             <h2>{{ s.title }}</h2>
             <template v-if="s.rows">
@@ -31,3 +32,9 @@ export default {
     data: _ => cvData
 }
 </script>
+
+<style>
+@media print {
+    .print-nbi { break-inside: avoid; }
+}
+</style>

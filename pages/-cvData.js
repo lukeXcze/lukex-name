@@ -64,6 +64,9 @@ module.exports = {
                     label: 'IT technologie',
                     list: techList
                 }, {
+                    label: 'Software',
+                    list: softList
+                }, {
                     label: 'správa IT',
                     list: [
                         {
@@ -74,9 +77,6 @@ module.exports = {
                             rfr: ['gl']
                         }
                     ]
-                }, {
-                    label: 'Software',
-                    list: softList
                 },
                 { label: 'Mateřský jazyk', value: 'čeština' },
                 { label: 'Ostatní jazyky', value: 'angličtina (psaná forma: dobře , mluvené slovo: základy)' },
@@ -93,6 +93,14 @@ module.exports = {
                     list: [
                         { label: 'cyklistika, pěší turistika' }
                     ]
+                }, {
+                    label: 'CV on-line',
+                    link: 'https://lukex.name/',
+                    print: 'only'
+                }, {
+                    label: 'Web git repo',
+                    link: 'https://github.com/lukeXcze/lukex-name',
+                    print: 'none'
                 }
             ]
         }

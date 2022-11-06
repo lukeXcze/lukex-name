@@ -1,11 +1,11 @@
 <template>
     <b-navbar
         type="dark"
-        variant="info"
+        variant="primary"
         sticky
     >
         <b-container>
-            <b-navbar-brand href="/">
+            <b-navbar-brand :to="{name: 'index'}">
                 Chuchma Lukáš
             </b-navbar-brand>
 
@@ -19,7 +19,7 @@
                     <b-nav-item
                         v-for="(l, i) in menu"
                         :key="i"
-                        :to="l.url"
+                        :to="l.to"
                     >
                         {{ l.label }}
                     </b-nav-item>
@@ -35,8 +35,8 @@ export default {
     data () {
         return {
             menu: [
-                { url: '/', label: 'CV' },
-                { url: '/reference/', label: 'Reference' }
+                { to: { name: 'index' }, label: 'CV' },
+                { to: { name: 'reference' }, label: 'Reference' }
             ]
         }
     }
