@@ -20,6 +20,7 @@
                         v-for="(l, i) in menu"
                         :key="i"
                         :to="l.to"
+                        exact-active-class="active"
                     >
                         {{ l.label }}
                     </b-nav-item>

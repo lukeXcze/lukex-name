@@ -1,9 +1,9 @@
 <template>
-    <b-row :class="[printClass, 'print-pgin']">
-        <b-col sm="4">
+    <b-row :class="printClass">
+        <b-col sm="3">
             {{ label }}
         </b-col>
-        <b-col sm="8">
+        <b-col sm="9">
             <cvLink
                 v-if="link"
                 :link="link"
@@ -21,9 +21,17 @@
                     v-for="i in list"
                     :key="i.label"
                     v-bind="i"
+                    @rfr-detail="$emit('rfr-detail', $event)"
                 />
             </template>
-            <span v-else>{{ value }}</span>
+            <span
+                v-else-if="valHtml"
+                v-html="valHtml"
+            />
+            <span
+                v-else
+                v-text="value"
+            />
         </b-col>
     </b-row>
 </template>
@@ -36,6 +44,10 @@ export default {
             default: null
         },
         value: {
+            type: String,
+            default: null
+        },
+        valHtml: {
             type: String,
             default: null
         },
@@ -60,6 +72,9 @@ export default {
             default: null
         }
     },
+    data: _ => ({
+        detail: null
+    }),
     computed: {
         printClass () {
             switch (this.print) {

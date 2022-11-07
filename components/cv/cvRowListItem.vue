@@ -1,5 +1,15 @@
 <template>
     <div class="mb-1">
+        <b-btn
+            v-if="rfrKey"
+            v-b-tooltip.left.hover="'otevřít referenci'"
+            class="d-print-none small mr-1 p-1"
+            size="sm"
+            variant="info"
+            @click="$emit('rfr-detail', rfrKey)"
+        >
+            <b-icon-search />
+        </b-btn>
         <cvLink
             v-if="link"
             :link="link"
@@ -13,12 +23,6 @@
             class="small"
             :list="tech"
         />
-        <div
-            v-if="info"
-            class="small"
-        >
-            {{ info }}
-        </div>
     </div>
 </template>
 
@@ -41,8 +45,8 @@ export default {
             type: String,
             default: null
         },
-        reference: {
-            type: Array,
+        rfrKey: {
+            type: String,
             default: null
         },
         tech: {

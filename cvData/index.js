@@ -1,13 +1,13 @@
-const techList = require('./-techList')
-const softList = require('./-softList')
-const rfrList = require('./-rfrList')
+const techList = require('./techList')
+const softList = require('./softList')
+const rfrList = require('./rfrList')
 
 module.exports = {
     sekce: [
         {
             title: 'Osobní informace',
             rows: [
-                { label: 'Jméno', value: 'CHUCHMA Lukáš' },
+                { label: 'Jméno', valHtml: 'CHUCHMA Lukáš<small>, Ing.</small>' },
                 { label: 'Adresa', value: 'Halasovo nám. 257/4, 638 00 Brno-Lesná' },
                 { label: 'E-mail', value: 'chuchma.lukas@gmail.com', link: 'mailto:chuchma.lukas@gmail.com' },
                 { label: 'Telefon', value: '+420 604 826 188', link: 'tel:+420604826188' },

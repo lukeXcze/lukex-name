@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import rfrList from './-rfrList'
+import rfrList from '@/cvData/rfrList'
 
 export default {
     data: _ => ({ rfrList })
