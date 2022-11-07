@@ -94,7 +94,7 @@ export default {
                 { length: this.imgsCount }
                 , (_, i) => ({
                     title: this.label,
-                    src: `/rfr/${this.rfrKey}/${i}.png`
+                    src: `/rfrImg/${this.rfrKey}/${i}.png`
                 })
             )
         }
