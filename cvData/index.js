@@ -6,8 +6,9 @@ module.exports = {
     sekce: [
         {
             title: 'Osobní informace',
+            fotoUrl: '/rfrImg/wv-1.png',
             rows: [
-                { label: 'Jméno', valHtml: 'CHUCHMA Lukáš<small>, Ing.</small>' },
+                { label: 'Jméno', value: 'CHUCHMA Lukáš', small: 'Ing.' },
                 { label: 'Adresa', value: 'Halasovo nám. 257/4, 638 00 Brno-Lesná' },
                 { label: 'E-mail', value: 'chuchma.lukas@gmail.com', link: 'mailto:chuchma.lukas@gmail.com' },
                 { label: 'Telefon', value: '+420 604 826 188', link: 'tel:+420604826188' },
@@ -70,11 +71,9 @@ module.exports = {
                     label: 'správa IT',
                     list: [
                         {
-                            label: 'správa Windows Server a IIS',
-                            rfr: ['wf', 'wi', 'wm']
+                            label: 'správa Windows Server a IIS (WS 2016, 2019)'
                         }, {
-                            label: 'správa Linux serverů',
-                            rfr: ['gl']
+                            label: 'správa Linux serverů (CentOS 7/8, Ubuntu Server 20.04)'
                         }
                     ]
                 },

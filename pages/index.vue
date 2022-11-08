@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>CV CHUCHMA Lukáš</h1>
         <div
             v-for="s in cvData.sekce"
             :key="s.title"
@@ -9,6 +8,17 @@
             <h2 class="mt-3">
                 {{ s.title }}
             </h2>
+            <div
+                v-if="s.fotoUrl"
+                style="height:0;overflow:show;"
+                class="text-right"
+            >
+                <b-img
+                    :src="s.fotoUrl"
+                    thumbnail
+                    style="max-width:12%;"
+                />
+            </div>
             <template v-if="s.rows">
                 <cvRow
                     v-for="r in s.rows"

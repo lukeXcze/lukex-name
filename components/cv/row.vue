@@ -25,13 +25,11 @@
                 />
             </template>
             <span
-                v-else-if="valHtml"
-                v-html="valHtml"
-            />
-            <span
                 v-else
                 v-text="value"
-            />
+            /><template v-if="small">
+                <small>, Ing.</small>
+            </template>
         </b-col>
     </b-row>
 </template>
@@ -47,7 +45,7 @@ export default {
             type: String,
             default: null
         },
-        valHtml: {
+        small: {
             type: String,
             default: null
         },
