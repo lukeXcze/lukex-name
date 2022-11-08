@@ -37,6 +37,7 @@
                     :key="i"
                     :md="6"
                     :sm="12"
+                    class="pb-3"
                 >
                     <b-img
                         thumbnail
@@ -94,7 +95,7 @@ export default {
                 { length: this.imgsCount }
                 , (_, i) => ({
                     title: this.label,
-                    src: `/rfrImg/${this.rfrKey}/${i}.png`
+                    src: `/rfrImg/${this.rfrKey}-${i}.png`
                 })
             )
         }

@@ -61,6 +61,7 @@ module.exports = [
         label: 'Moodle FAST VUT',
         info: 'Údržba Moodle a tvorba Intranetové aplikace pro práci s Moodle API, import studentů a export hodnocení.',
         tech: ['PHP', 'classic ASP', 'IIS', 'MSSQL'],
-        link: 'https://lms.fce.vutbr.cz/'
+        link: 'https://lms.fce.vutbr.cz/',
+        imgsCount: 3
     }
 ]
