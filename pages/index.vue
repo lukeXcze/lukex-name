@@ -41,7 +41,7 @@
             class="d-print-none"
             style="padding-top:15em;padding-bottom:5em"
         >
-            <b-icon-info-circle-fill class="text-info" />
+            <i class="fa fa-info-circle fa-fw text-info" />
             Některé řádky CV jsou zobrazena jen ve verzi pro tisk (odkaz na CV online), jiná jen v on-line (odkaz na zdroje), online verze obsahuje interaktivní prvky.
         </div>
     </div>

@@ -2,13 +2,12 @@
     <div class="mb-1">
         <b-btn
             v-if="rfrKey"
-            v-b-tooltip.left.hover="'otevřít referenci'"
             class="d-print-none mr-1 py-0"
             size="sm"
             variant="info"
             @click="$emit('rfr-detail', rfrKey)"
         >
-            <small><b-icon-search /></small>
+            <i class="fa fa-search fa-fw" />
         </b-btn>
         <cvLink
             v-if="link"

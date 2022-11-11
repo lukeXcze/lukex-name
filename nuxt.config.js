@@ -29,7 +29,8 @@ export default {
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
         '@/assets/nuxt-transition.css',
-        '~/bootstrap-cfg/bootstrapStyle.scss'
+        '~/bootstrap-cfg/bootstrapStyle.scss',
+        'font-awesome/css/font-awesome.css'
     ],
     pageTransition: 'page',
 
@@ -66,8 +67,7 @@ export default {
     bootstrapVue: {
         bootstrapCSS: false,
         bootstrapVueCSS: false,
-        config: bvSett,
-        icons: true
+        config: bvSett
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
