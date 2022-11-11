@@ -14,9 +14,9 @@ import rfrList from '@/cvData/rfrList'
 
 export default {
     props: {
-        rfrKey: {
-            type: String,
-            default: null
+        rfr: {
+            type: Object,
+            default: _ => ({ key: null })
         }
     },
     data: _ => ({
@@ -24,11 +24,12 @@ export default {
     }),
     computed: {
         rfrData () {
-            return rfrList.find(el => el.rfrKey === this.rfrKey)
+            const key = this.rfr && this.rfr.key ? this.rfr.key : null
+            return rfrList.find(el => el.rfrKey === key)
         }
     },
     watch: {
-        rfrKey () { this.visible = true }
+        rfr () { this.visible = true }
     }
 }
 </script>

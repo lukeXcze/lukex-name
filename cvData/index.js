@@ -6,7 +6,7 @@ module.exports = {
     sekce: [
         {
             title: 'Osobní informace',
-            fotoUrl: '/rfrImg/wv-1.png',
+            // fotoUrl: '',
             rows: [
                 { label: 'Jméno', value: 'CHUCHMA Lukáš', small: 'Ing.' },
                 { label: 'Adresa', value: 'Halasovo nám. 257/4, 638 00 Brno-Lesná' },
@@ -73,7 +73,7 @@ module.exports = {
                         {
                             label: 'správa Windows Server a IIS (WS 2016, 2019)'
                         }, {
-                            label: 'správa Linux serverů (CentOS 7/8, Ubuntu Server 20.04)'
+                            label: 'správa Linux serverů (CentOS 7, Ubuntu Server 20.04)'
                         }
                     ]
                 },

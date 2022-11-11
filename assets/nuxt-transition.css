@@ -1,0 +1,8 @@
+/* .nuxt-fading a .nuxt-fading-off doplněny pro využití v komponentách */
+/* .fade-* vyuřívá přechod statusInfoFada a příp. další komponenty přes <transtition name="fade" ...> */
+.page-enter-active, .page-leave-active, .nuxt-fading, .fade-enter-active, .fade-leave-active {
+    transition: opacity .25s
+}
+.page-enter, .page-leave-active, .nuxt-fading-off, .fade-enter, .fade-leave-to {
+    opacity: 0
+}

@@ -3,12 +3,12 @@
         <b-btn
             v-if="rfrKey"
             v-b-tooltip.left.hover="'otevřít referenci'"
-            class="d-print-none small mr-1 p-1"
+            class="d-print-none mr-1 py-0"
             size="sm"
             variant="info"
             @click="$emit('rfr-detail', rfrKey)"
         >
-            <b-icon-search />
+            <small><b-icon-search /></small>
         </b-btn>
         <cvLink
             v-if="link"
@@ -20,7 +20,6 @@
 
         <cvTechItems
             v-if="tech && tech.length"
-            class="small"
             :list="tech"
         />
     </div>

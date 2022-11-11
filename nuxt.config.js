@@ -14,17 +14,24 @@ export default {
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'description', name: 'description', content: '' },
-            { name: 'format-detection', content: 'telephone=no' }
+            { name: 'format-detection', content: 'telephone=no' },
+            { name: 'robots', content: 'noindex, nofollow' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Jura' },
+            { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+            { rel: 'icon" type="image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+            { rel: 'icon" type="image/png', sizes: '16x16', href: '/favicon-16x16.png' }
         ]
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
+        '@/assets/nuxt-transition.css',
         '~/bootstrap-cfg/bootstrapStyle.scss'
     ],
+    pageTransition: 'page',
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
@@ -48,6 +55,12 @@ export default {
     axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
         baseURL: '/'
+    },
+
+    loadingIndicator: {
+        name: 'pulse',
+        color: '#fff',
+        background: '#1c1183'
     },
 
     bootstrapVue: {

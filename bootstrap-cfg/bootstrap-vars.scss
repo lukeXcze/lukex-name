@@ -4,13 +4,17 @@
 $border-radius:                         0 !default;
 $custom-switch-indicator-border-radius: 0 !default;
 
+$body-bg: #eee;
+$font-family-sans-serif: Jura, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif !default;
+
 // barvy
-$primary:       #5f44b1 !default;
-$secondary:     #9c4528 !default;
-$success:       #0baa0b !default;
-$info:          #1f6b9e !default;
-$warning:       #bdab0f !default;
-$danger:        #c02a17 !default;
+$primary:       #1c1183 !default;
+$secondary:     #0b9696 !default;
+$success:       #059705 !default;
+$info:          #026481 !default;
+$warning:       #ac9b05 !default;
+$danger:        #ad1b08 !default;
+
 
 @import "bootstrap/scss/_variables.scss";
 

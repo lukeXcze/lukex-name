@@ -24,7 +24,7 @@
                     v-for="r in s.rows"
                     :key="r.label"
                     v-bind="r"
-                    @rfr-detail="rfrKey = $event"
+                    @rfr-detail="openModal"
                 />
             </template>
             <template v-else-if="s.blocks">
@@ -32,11 +32,11 @@
                     v-for="(b, bi) in s.blocks"
                     :key="bi"
                     :items="b"
-                    @rfr-detail="rfrKey = $event"
+                    @rfr-detail="openModal"
                 />
             </template>
         </div>
-        <rfrModal :rfrKey="rfrKey" />
+        <rfrModal :rfr="rfr" />
         <div
             class="d-print-none"
             style="padding-top:15em;padding-bottom:5em"
@@ -53,13 +53,19 @@ import cvData from '@/cvData'
 export default {
     data: _ => ({
         cvData,
-        rfrKey: null
-    })
+        rfr: { key: null }
+    }),
+    methods: {
+        openModal (data) {
+            this.rfr = { key: data }
+        }
+    }
 }
 </script>
 
 <style>
 @media print {
     .print-nbi { break-inside: avoid; }
+    body { background-color: #fff; }
 }
 </style>

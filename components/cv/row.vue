@@ -3,7 +3,10 @@
         <b-col sm="3">
             {{ label }}
         </b-col>
-        <b-col sm="9">
+        <b-col
+            sm="9"
+            class="pl-5"
+        >
             <cvLink
                 v-if="link"
                 :link="link"
