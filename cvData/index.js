@@ -71,14 +71,14 @@ module.exports = {
                     label: 'správa IT',
                     list: [
                         {
-                            label: 'správa Windows Server a IIS (WS 2016, 2019)'
+                            label: 'správa Windows Server a IIS'
                         }, {
-                            label: 'správa Linux serverů (CentOS 7, Ubuntu Server 20.04)'
+                            label: 'správa Linux serverů (CentOS, Ubuntu Server)'
                         }
                     ]
                 },
                 { label: 'Mateřský jazyk', value: 'čeština' },
-                { label: 'Ostatní jazyky', value: 'angličtina (psaná forma: dobře , mluvené slovo: základy)' },
+                { label: 'Ostatní jazyky', value: 'angličtina (pasivně: dobře, aktivně: základy)' },
                 { label: 'Řidičský průkaz', value: 'skupina B' }
             ]
         }, {

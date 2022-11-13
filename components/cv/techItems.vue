@@ -4,7 +4,7 @@
             v-for="t in list"
             :key="t"
             variant="primary"
-            class="ml-2"
+            class="mr-2"
         >
             {{ t }}
         </b-badge>
