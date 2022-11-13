@@ -5,13 +5,13 @@
             :href="link"
             :target="linkBlank ? '_blank' : null"
         >
-            {{ label || link }}<template v-if="lock">, <i class="fa fa-lock fa-fw" /> uzavřený systém</template> <i
+            {{ label || link }}<template v-if="lock"> <i class="fa fa-lock fa-fw" /> uzavřený systém</template> <i
                 v-if="linkBlank"
                 class="fa fa-external-link-square fa-fw"
             />
         </a>
         <span class="d-none d-print-inline">
-            {{ label || link }} <span v-if="linkBlank && label">({{ link }}<template v-if="lock">, <i class="fa fa-lock fa-fw" /> uzavřený systém</template>)</span>
+            {{ label || link }} <span v-if="linkBlank && label">({{ link }}<template v-if="lock"> <i class="fa fa-lock fa-fw" /> uzavřený systém</template>)</span>
         </span>
     </span>
 </template>

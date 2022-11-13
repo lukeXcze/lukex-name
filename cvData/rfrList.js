@@ -19,7 +19,7 @@ module.exports = [
         rfrKey: 'dc',
         label: 'Interní systém pro evidence a schvalování zakázek FAST VUT',
         short: 'Systém pro zakázky',
-        tech: ['SketchUp', 'classic ASP', 'jQuery', 'MSSQL', 'Bootstrap'],
+        tech: ['classic ASP', 'jQuery', 'MSSQL', 'Bootstrap'],
         info: 'Aplikace pro správu zakázek fakulty, základem jsou na serveru validované formy (jQuery.ajax), s následným schvalovacím procesem a exportem do celounivezitního finančního API.',
         link: 'https://intranet.fce.vutbr.cz/',
         linkLock: true,
