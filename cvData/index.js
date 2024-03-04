@@ -19,7 +19,7 @@ module.exports = {
             title: 'Pracovní zkušenosti',
             blocks: [
                 [
-                    { label: 'Období', value: '2014 – 2022' },
+                    { label: 'Období', value: '2014 – now()' },
                     { label: 'Zaměstnavatel', value: 'Vysoké učení technické v Brně, Fakulta stavební' },
                     { label: 'Odvětví', value: 'IT – správa webu a webových aplikací, správa serverů' },
                     { label: 'Pracovní náplň', value: 'tvorba a údržba webu fakulty a jejich součástí, tvorba a správa interních aplikací, správa webových serverů' }
